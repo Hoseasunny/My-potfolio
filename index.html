@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Effect</title>
+  <style>
+    body{
+      background-color:lightgray;
+    }
+   p{
+      color:blue;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-decoration-style: double;
+      font-size: 20px;
+      font-weight:bold;
+    }
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius:50%;
+      object-fit: cover;
+      
+    }
+    .first-box {
+     /* display:flex; */
+      width:90%;
+      padding: 0;
+      min-width: 400px;
+      height: auto;
+      text-align: center;
+      background: goldenrod;
+      border-radius: 10px;
+      margin: 50px auto;
+      box-shadow: 0 5px 15px rgb(0, 0, 0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .second-box,
+    .third-box,
+    .fourth-box{
+      display: flex;
+      width: 90% ;
+      min-width: 400px;
+      padding: 0;
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      background-color: goldenrod;
+      border-radius: 10px;
+      margin: 50px auto;
+      box-shadow: 0 5px 15px rgb(0, 0, 0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform-origin: center;
+    }
+    .text-box1,
+    .text-box2,
+    .text-box3{
+      width: auto;
+      display: flex;
+      height: 200px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+    }
+    .image-box1,
+    .image-box2,
+    .image-box3{
+      border-radius: 50%;
+      border: 3px solid black;
+      width: 200px;
+      display:flex;
+      margin:auto;
+      height: 200px;
+      justify-content: center;
+      align-content:center;
+    }
+    .first-box:hover,
+    .second-box:hover,
+    .third-box:hover,
+    .fourth-box:hover {
+      transform: scale(1.1); /* Enlarge by 10% */
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* Stronger shadow on hover */
+    }
+    @media (min-width:768px) {
+    .first-box:hover,
+    .second-box:hover,
+    .third-box:hover,
+    .fourth-box:hover {
+    max-width: 400px;
+    font-size: 20px;
+    }  
+    }
+  </style>
+</head>
+<body>
+  <div class="first-box"><h2>Hosea Wambui</h2>
+    <h3>frontend webdeveloper| responsive web desinger using HTML, CSS & JS</h3>
+  </div>
+  <div class="second-box">
+    <div class="text-box1">
+      <p>
+        I am an ongoin second year student in Bacherlor of Science in 
+        Data Science at Meru University of Science and Technology 
+      </p>
+    </div>
+    <div class="image-box1">
+      <img src="education.jpg" height="200" width="300px" alt="education">
+    </div>
+  </div>
+  <div class="third-box">
+    <div class="image-box2">
+      <img src="responsive.jpg" height="200" width="300px" alt="responsive web pic">
+    </div>
+    <div class="text-box2">
+      <p> after acquring basic skills of frontend dev 
+        during my first year course i was inspired in creating responsive webs</p>
+    </div>
+  </div>
+  <div class="fourth-box">
+    <div class="text-box3">
+      <p>i went further and practised on free tutorials horning my skills to perfection
+        . Through lots of training and difficulties am proud to proclaim
+         myself as a webdeveloper. 
+      </p>
+    </div>
+    <div class="image-box3">
+      <img src="coding.jpg" width="300px" height="200" alt="pic of a person coding">
+    </div>
+  </div>
+</body>
+</html>
